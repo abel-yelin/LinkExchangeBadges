@@ -1,0 +1,20 @@
+{
+  "name": "@link-exchange/script",
+  "version": "0.1.0",
+  "description": "Link Exchange Badge Delivery SDK — CDN Script Bundle",
+  "type": "module",
+  "main": "./dist/link-exchange.umd.cjs",
+  "module": "./dist/link-exchange.esm.js",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,umd --global-name LinkExchange --minify --clean",
+    "dev": "tsup src/index.ts --format esm,umd --global-name LinkExchange --watch"
+  },
+  "dependencies": {
+    "@link-exchange/core": "workspace:*"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}
