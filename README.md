@@ -73,7 +73,7 @@ pnpm add @link-exchange/react
   <footer id="badge-footer"></footer>
 
   <!-- 引入 SDK -->
-  <script src="https://cdn.example.com/link-exchange.umd.cjs"></script>
+  <script src="https://cdn.example.com/index.global.js"></script>
 
   <script>
     window.LinkExchange.mount('#badge-footer', {

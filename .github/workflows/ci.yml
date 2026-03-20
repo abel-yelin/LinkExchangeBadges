@@ -6,11 +6,12 @@ on:
   pull_request:
     branches: [main]
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
 
     steps:
       - name: Checkout code
@@ -53,7 +54,7 @@ jobs:
       - name: Build remaining packages
         run: |
           echo "Building remaining packages..."
-          pnpm -r --filter '@link-exchange/{react,script}' run build
+          pnpm -r --filter @link-exchange/react --filter @link-exchange/script run build
           echo "All packages built successfully"
 
       - name: Type check - Core
