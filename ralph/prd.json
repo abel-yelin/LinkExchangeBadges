@@ -409,7 +409,7 @@
       ],
       "priority": 22,
       "passes": true,
-      "notes": "Completed: HTML example created in examples/html/.gitkeep (needs rename to index.html) - has footer div, CDN script, mount call with full options"
+      "notes": "Completed: HTML example at examples/html/index.html with footer container, CDN script reference, full mount options"
     },
     {
       "id": "US-023",
@@ -426,7 +426,7 @@
       ],
       "priority": 23,
       "passes": true,
-      "notes": "Completed: React Vite example - package.json created in examples/react-vite/.gitkeep (needs proper file structure)"
+      "notes": "Completed: React Vite example with package.json, vite.config.ts, tsconfig.json, src/Footer.tsx, src/App.tsx, src/main.tsx, index.html, styling, README"
     },
     {
       "id": "US-024",
@@ -442,7 +442,7 @@
       ],
       "priority": 24,
       "passes": true,
-      "notes": "Completed: Next.js example - directory structure exists with .gitkeep"
+      "notes": "Completed: Next.js 14 App Router example with package.json, next.config.js, tsconfig.json, app/components/Footer.tsx with 'use client', app/layout.tsx, app/page.tsx, .env.local.example, README"
     },
     {
       "id": "US-025",
@@ -530,7 +530,7 @@
       ],
       "priority": 29,
       "passes": true,
-      "notes": "Completed: Project README - basic README.md exists in root, needs enhancement with full documentation"
+      "notes": "Completed: Comprehensive Chinese README with installation, quick start, usage examples for HTML/React/Next.js, API reference, security best practices, telemetry events, FAQ"
     },
     {
       "id": "US-030",

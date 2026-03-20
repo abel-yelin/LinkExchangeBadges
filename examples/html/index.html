@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Link Exchange SDK - HTML Example</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    footer {
+      margin-top: 50px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+  <h1>Link Exchange SDK - HTML Example</h1>
+  <p>This page demonstrates the Link Exchange SDK using the CDN script tag.</p>
+
+  <!-- Footer container for badges -->
+  <footer id="link-exchange-footer"></footer>
+
+  <!-- CDN script (placeholder - replace with actual CDN URL after build) -->
+  <!-- <script src="https://cdn.example.com/link-exchange.umd.cjs"></script> -->
+
+  <!-- For development, use local build -->
+  <script src="../../packages/script/dist/link-exchange.umd.cjs"></script>
+
+  <script>
+    // Mount badges to footer
+    window.LinkExchange.mount('#link-exchange-footer', {
+      source: 'https://cdn.example.com/badges.json', // Replace with actual config URL
+      siteId: 'html-example',
+      group: undefined,
+      environment: 'development',
+      locale: 'en',
+      className: 'custom-badges',
+      cache: {
+        enabled: true,
+        ttlMs: 30 * 60 * 1000 // 30 minutes
+      },
+      security: {
+        allowedLinkDomains: ['producthunt.com', 'tabler-icons.io'],
+        allowedImageDomains: ['producthunt.com', 'tabler-icons.io', 'cdn.example.com']
+      },
+      telemetry: {
+        enabled: true,
+        onEvent: (event) => console.log('[LinkExchange]', event)
+      },
+      fetchTimeoutMs: 5000
+    });
+  </script>
+</body>
+</html>
