@@ -1,0 +1,39 @@
+{
+  "configVersion": "1",
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2026-03-20T10:00:00Z",
+  "badges": [
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "enabled": true,
+      "group": "featured",
+      "priority": 100,
+      "renderType": "image",
+      "imageUrl": "https://producthunt.com/widgets/embed-image/v1/featured.svg?post_id=123",
+      "linkUrl": "https://www.producthunt.com/posts/example",
+      "alt": "Featured on Product Hunt",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "width": 250,
+      "height": 54
+    },
+    {
+      "id": "tabler",
+      "name": "Featured on Tabler",
+      "enabled": true,
+      "group": "featured",
+      "priority": 90,
+      "renderType": "image",
+      "imageUrl": "https://tabler.io/badges/featured.svg",
+      "linkUrl": "https://tabler.io/templates/example",
+      "alt": "Featured on Tabler",
+      "target": "_blank",
+      "width": 200,
+      "height": 54,
+      "rules": {
+        "environments": ["production"]
+      }
+    }
+  ]
+}

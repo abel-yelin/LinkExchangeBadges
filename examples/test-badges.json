@@ -1,0 +1,67 @@
+{
+  "configVersion": "1",
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2026-03-20T10:00:00Z",
+  "badges": [
+    {
+      "id": "github",
+      "name": "GitHub Repo",
+      "enabled": true,
+      "group": "community",
+      "priority": 100,
+      "renderType": "image",
+      "imageUrl": "https://img.shields.io/badge/GitHub-View%20Source-blue?logo=github",
+      "linkUrl": "https://github.com",
+      "alt": "View on GitHub",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "width": 120,
+      "height": 20
+    },
+    {
+      "id": "npm",
+      "name": "NPM Package",
+      "enabled": true,
+      "group": "community",
+      "priority": 90,
+      "renderType": "image",
+      "imageUrl": "https://img.shields.io/badge/npm-%40link--exchange-core-red?logo=npm",
+      "linkUrl": "https://www.npmjs.com/package/@link-exchange/core",
+      "alt": "View on NPM",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "width": 150,
+      "height": 20
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "enabled": true,
+      "group": "tech",
+      "priority": 80,
+      "renderType": "image",
+      "imageUrl": "https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript",
+      "linkUrl": "https://www.typescriptlang.org/",
+      "alt": "Built with TypeScript",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "width": 140,
+      "height": 20
+    },
+    {
+      "id": "license",
+      "name": "MIT License",
+      "enabled": true,
+      "group": "legal",
+      "priority": 70,
+      "renderType": "image",
+      "imageUrl": "https://img.shields.io/badge/License-MIT-yellow.svg",
+      "linkUrl": "https://opensource.org/licenses/MIT",
+      "alt": "MIT License",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "width": 100,
+      "height": 20
+    }
+  ]
+}

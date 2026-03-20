@@ -2,20 +2,18 @@
 
 import { LinkExchange } from '@link-exchange/react'
 
-const source = process.env.NEXT_PUBLIC_BADGES_SOURCE || ''
+const source = process.env.NEXT_PUBLIC_BADGES_SOURCE || 'http://localhost:8080/test-badges.json'
 const siteId = 'nextjs-example'
 const environment = process.env.NODE_ENV || 'development'
 
+// 检测是否使用本地服务器
+const isLocalServer = source.includes('localhost:8080')
+
 export default function Footer() {
-  if (!source) {
-    return (
-      <footer className="bg-gray-100 border-t border-gray-200 mt-auto">
-        <div className="max-w-4xl mx-auto px-4 py-6 text-center text-sm text-gray-500">
-          <p>Link Exchange Badges - Configure NEXT_PUBLIC_BADGES_SOURCE to display badges</p>
-        </div>
-      </footer>
-    )
-  }
+  // 开启日志
+  console.log('%c🚀 Link Exchange Next.js App', 'color: #000; font-weight: bold; font-size: 14px')
+  console.log('配置源:', source)
+  console.log('环境:', environment)
 
   return (
     <LinkExchange
@@ -25,17 +23,26 @@ export default function Footer() {
       as="footer"
       cache={{
         enabled: true,
-        ttlMs: 30 * 60 * 1000, // 30 minutes
+        ttlMs: isLocalServer ? 5 * 1000 : 30 * 60 * 1000, // 本地5秒，远程30分钟
       }}
-      security={{
-        allowedLinkDomains: ['example.com', 'trusted-site.com'],
-        allowedImageDomains: ['cdn.example.com', 'images.example.com'],
-      }}
+      security={
+        isLocalServer
+          ? {
+              // 本地测试配置 - 允许 Shields.io 徽章
+              allowedLinkDomains: ['github.com', 'npmjs.com', 'typescriptlang.org', 'opensource.org'],
+              allowedImageDomains: ['img.shields.io', 'github.com'],
+            }
+          : {
+              // 生产环境配置
+              allowedLinkDomains: ['example.com', 'trusted-site.com'],
+              allowedImageDomains: ['cdn.example.com', 'images.example.com'],
+            }
+      }
       telemetry={{
-        enabled: environment === 'production',
+        enabled: true,
         onEvent: (event) => {
           if (environment === 'development') {
-            console.log('[LinkExchange Telemetry]', event.type, event)
+            console.log('[Next.js Footer Telemetry]', event.type, event)
           }
         },
       }}

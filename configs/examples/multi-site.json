@@ -1,0 +1,52 @@
+{
+  "configVersion": "2",
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2026-03-20T12:00:00Z",
+  "badges": [
+    {
+      "id": "producthunt-global",
+      "name": "Product Hunt",
+      "enabled": true,
+      "group": "featured",
+      "priority": 100,
+      "renderType": "image",
+      "imageUrl": "https://producthunt.com/widgets/embed-image/v1/featured.svg?post_id=123",
+      "linkUrl": "https://www.producthunt.com/posts/example",
+      "alt": "Featured on Product Hunt",
+      "width": 250,
+      "height": 54
+    },
+    {
+      "id": "launchigniter",
+      "name": "LaunchIgniter",
+      "enabled": true,
+      "group": "featured",
+      "priority": 80,
+      "renderType": "image",
+      "imageUrl": "https://launchigniter.com/badges/featured.svg",
+      "linkUrl": "https://launchigniter.com/products/example",
+      "alt": "Featured on LaunchIgniter",
+      "width": 220,
+      "height": 54,
+      "rules": {
+        "siteIds": ["marketing-site"],
+        "environments": ["production"],
+        "locales": ["en", "zh-CN"]
+      }
+    },
+    {
+      "id": "docs-site-only",
+      "name": "Docs Badge",
+      "enabled": true,
+      "group": "docs",
+      "priority": 50,
+      "renderType": "image",
+      "imageUrl": "https://cdn.example.com/badges/docs.svg",
+      "linkUrl": "https://docs.example.com",
+      "alt": "Documentation",
+      "rules": {
+        "siteIds": ["docs-site"]
+      }
+    }
+  ]
+}

@@ -8,7 +8,8 @@
     "test": "pnpm -r run test",
     "lint": "pnpm -r run lint",
     "dev": "pnpm -r run dev --parallel",
-    "typecheck": "pnpm -r exec tsc --noEmit"
+    "typecheck": "pnpm -r exec tsc --noEmit",
+    "validate-configs": "node scripts/validate-configs.mjs"
   },
   "devDependencies": {
     "typescript": "^5.0.0",

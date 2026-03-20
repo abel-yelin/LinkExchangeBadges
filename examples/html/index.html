@@ -31,28 +31,56 @@
   <script src="../../packages/script/dist/link-exchange.umd.cjs"></script>
 
   <script>
-    // Mount badges to footer
-    window.LinkExchange.mount('#link-exchange-footer', {
-      source: 'https://cdn.example.com/badges.json', // Replace with actual config URL
+    // === 配置选项 ===
+    // 使用本地测试服务器（需先运行: node examples/server.mjs）
+    const USE_LOCAL_SERVER = true;
+
+    const CONFIG = {
+      // 本地测试服务器 URL
+      localUrl: 'http://localhost:8080/test-badges.json',
+      // 远程 CDN URL（生产环境）
+      remoteUrl: 'https://cdn.example.com/badges.json',
+
       siteId: 'html-example',
-      group: undefined,
       environment: 'development',
       locale: 'en',
-      className: 'custom-badges',
+
       cache: {
         enabled: true,
-        ttlMs: 30 * 60 * 1000 // 30 minutes
+        ttlMs: 5 * 1000 // 5 秒（开发环境短缓存）
       },
+
       security: {
-        allowedLinkDomains: ['producthunt.com', 'tabler-icons.io'],
-        allowedImageDomains: ['producthunt.com', 'tabler-icons.io', 'cdn.example.com']
+        allowedLinkDomains: ['github.com', 'npmjs.com', 'typescriptlang.org', 'opensource.org'],
+        allowedImageDomains: ['img.shields.io', 'github.com', 'npmjs.com']
       },
+
       telemetry: {
         enabled: true,
-        onEvent: (event) => console.log('[LinkExchange]', event)
+        onEvent: (event) => console.log('[LinkExchange Telemetry]', event.type, event)
       },
+
       fetchTimeoutMs: 5000
+    };
+
+    // === 挂载徽章 ===
+    window.LinkExchange.mount('#link-exchange-footer', {
+      source: USE_LOCAL_SERVER ? CONFIG.localUrl : CONFIG.remoteUrl,
+      siteId: CONFIG.siteId,
+      environment: CONFIG.environment,
+      locale: CONFIG.locale,
+      cache: CONFIG.cache,
+      security: CONFIG.security,
+      telemetry: CONFIG.telemetry,
+      fetchTimeoutMs: CONFIG.fetchTimeoutMs
     });
+
+    // === 状态提示 ===
+    console.log('%c🚀 Link Exchange SDK 已加载', 'color: #4CAF50; font-weight: bold');
+    console.log('配置源:', USE_LOCAL_SERVER ? CONFIG.localUrl : CONFIG.remoteUrl);
+    if (USE_LOCAL_SERVER) {
+      console.log('%c💡 提示: 请确保本地测试服务器正在运行 (node examples/server.mjs)', 'color: #FF9800');
+    }
   </script>
 </body>
 </html>

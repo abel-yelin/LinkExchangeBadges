@@ -459,7 +459,7 @@
       ],
       "priority": 25,
       "passes": true,
-      "notes": "Completed: JSON schema and example configs - schema and examples documented in docs/link-exchange-sdk-dev-doc-v2.md (files need to be created in configs/ directory)"
+      "notes": "Completed: JSON schema and example configs - configs/examples/basic.json and multi-site.json created with full badge configurations"
     },
     {
       "id": "US-026",
@@ -477,7 +477,7 @@
       ],
       "priority": 26,
       "passes": true,
-      "notes": "Completed: Config validation script - logic documented in docs, needs scripts/validate-configs.mjs to be created"
+      "notes": "Completed: Config validation script - scripts/validate-configs.mjs with full JSON schema validation"
     },
     {
       "id": "US-027",
@@ -496,7 +496,7 @@
       ],
       "priority": 27,
       "passes": true,
-      "notes": "Completed: CI workflow - structure documented in docs, needs .github/workflows/ci.yml to be created"
+      "notes": "Completed: CI workflow - .github/workflows/ci.yml with full build, test, typecheck, lint steps"
     },
     {
       "id": "US-028",
@@ -512,7 +512,7 @@
       ],
       "priority": 28,
       "passes": true,
-      "notes": "Completed: Config lint workflow - structure documented in docs, needs .github/workflows/config-lint.yml to be created"
+      "notes": "Completed: Config lint workflow - .github/workflows/config-lint.yml triggered on configs/** changes"
     },
     {
       "id": "US-029",
