@@ -1,8 +1,8 @@
 import { ssrRenderAttrs, ssrRenderStyle } from "vue/server-renderer";
 import { useSSRContext } from "vue";
 import { _ as _export_sfc } from "./plugin-vue_export-helper.1tPrXgE0.js";
-const __pageData = JSON.parse('{"title":"HTML 示例","description":"","frontmatter":{},"headers":[],"relativePath":"docs/examples/html.md","filePath":"docs/examples/html.md"}');
-const _sfc_main = { name: "docs/examples/html.md" };
+const __pageData = JSON.parse('{"title":"HTML 示例","description":"","frontmatter":{},"headers":[],"relativePath":"examples/html.md","filePath":"examples/html.md"}');
+const _sfc_main = { name: "examples/html.md" };
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   _push(`<div${ssrRenderAttrs(_attrs)}><h1 id="html-示例" tabindex="-1">HTML 示例 <a class="header-anchor" href="#html-示例" aria-label="Permalink to &quot;HTML 示例&quot;">​</a></h1><p>本节展示如何在纯 HTML 项目中使用 Link Exchange Badges SDK。</p><h2 id="基础示例" tabindex="-1">基础示例 <a class="header-anchor" href="#基础示例" aria-label="Permalink to &quot;基础示例&quot;">​</a></h2><h3 id="_1-创建-html-文件" tabindex="-1">1. 创建 HTML 文件 <a class="header-anchor" href="#_1-创建-html-文件" aria-label="Permalink to &quot;1. 创建 HTML 文件&quot;">​</a></h3><div class="language-html line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">html</span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}">&lt;!</span><span style="${ssrRenderStyle({ "color": "#85E89D" })}">DOCTYPE</span><span style="${ssrRenderStyle({ "color": "#B392F0" })}"> html</span><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}">&gt;</span></span>
 <span class="line"><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}">&lt;</span><span style="${ssrRenderStyle({ "color": "#85E89D" })}">html</span><span style="${ssrRenderStyle({ "color": "#B392F0" })}"> lang</span><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}">=</span><span style="${ssrRenderStyle({ "color": "#9ECBFF" })}">&quot;zh-CN&quot;</span><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}">&gt;</span></span>
@@ -467,7 +467,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("docs/examples/html.md");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("examples/html.md");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
 const html = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);

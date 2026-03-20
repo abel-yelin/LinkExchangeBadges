@@ -1,8 +1,8 @@
 import { ssrRenderAttrs, ssrRenderStyle } from "vue/server-renderer";
 import { useSSRContext } from "vue";
 import { _ as _export_sfc } from "./plugin-vue_export-helper.1tPrXgE0.js";
-const __pageData = JSON.parse('{"title":"Next.js 示例","description":"","frontmatter":{},"headers":[],"relativePath":"docs/examples/nextjs.md","filePath":"docs/examples/nextjs.md"}');
-const _sfc_main = { name: "docs/examples/nextjs.md" };
+const __pageData = JSON.parse('{"title":"Next.js 示例","description":"","frontmatter":{},"headers":[],"relativePath":"examples/nextjs.md","filePath":"examples/nextjs.md"}');
+const _sfc_main = { name: "examples/nextjs.md" };
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   _push(`<div${ssrRenderAttrs(_attrs)}><h1 id="next-js-示例" tabindex="-1">Next.js 示例 <a class="header-anchor" href="#next-js-示例" aria-label="Permalink to &quot;Next.js 示例&quot;">​</a></h1><p>本节展示如何在 Next.js 项目中使用 Link Exchange Badges SDK。</p><h2 id="app-router-示例-next-js-14" tabindex="-1">App Router 示例 (Next.js 14+) <a class="header-anchor" href="#app-router-示例-next-js-14" aria-label="Permalink to &quot;App Router 示例 (Next.js 14+)&quot;">​</a></h2><h3 id="_1-安装依赖" tabindex="-1">1. 安装依赖 <a class="header-anchor" href="#_1-安装依赖" aria-label="Permalink to &quot;1. 安装依赖&quot;">​</a></h3><div class="language-bash line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">bash</span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span style="${ssrRenderStyle({ "color": "#B392F0" })}">npx</span><span style="${ssrRenderStyle({ "color": "#9ECBFF" })}"> create-next-app@latest</span><span style="${ssrRenderStyle({ "color": "#9ECBFF" })}"> my-app</span><span style="${ssrRenderStyle({ "color": "#79B8FF" })}"> --typescript</span><span style="${ssrRenderStyle({ "color": "#79B8FF" })}"> --tailwind</span></span>
 <span class="line"><span style="${ssrRenderStyle({ "color": "#79B8FF" })}">cd</span><span style="${ssrRenderStyle({ "color": "#9ECBFF" })}"> my-app</span></span>
@@ -483,7 +483,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("docs/examples/nextjs.md");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("examples/nextjs.md");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
 const nextjs = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);

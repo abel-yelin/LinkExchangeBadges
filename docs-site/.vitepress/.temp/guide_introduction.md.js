@@ -1,8 +1,8 @@
 import { ssrRenderAttrs, ssrRenderStyle } from "vue/server-renderer";
 import { useSSRContext } from "vue";
 import { _ as _export_sfc } from "./plugin-vue_export-helper.1tPrXgE0.js";
-const __pageData = JSON.parse('{"title":"介绍","description":"","frontmatter":{},"headers":[],"relativePath":"docs/guide/introduction.md","filePath":"docs/guide/introduction.md"}');
-const _sfc_main = { name: "docs/guide/introduction.md" };
+const __pageData = JSON.parse('{"title":"介绍","description":"","frontmatter":{},"headers":[],"relativePath":"guide/introduction.md","filePath":"guide/introduction.md"}');
+const _sfc_main = { name: "guide/introduction.md" };
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   _push(`<div${ssrRenderAttrs(_attrs)}><h1 id="介绍" tabindex="-1">介绍 <a class="header-anchor" href="#介绍" aria-label="Permalink to &quot;介绍&quot;">​</a></h1><p>Link Exchange Badges 是一个跨栈的徽章展示 SDK，让你能够在任何 Web 应用中轻松展示合作伙伴徽章。</p><h2 id="什么是-link-exchange-badges" tabindex="-1">什么是 Link Exchange Badges？ <a class="header-anchor" href="#什么是-link-exchange-badges" aria-label="Permalink to &quot;什么是 Link Exchange Badges？&quot;">​</a></h2><p>Link Exchange Badges 是一个轻量级、类型安全的 JavaScript SDK，用于在 Web 应用中动态展示徽章。它支持：</p><ul><li><strong>多框架支持</strong>：原生 HTML、React、Next.js 等</li><li><strong>远程配置</strong>：通过 JSON 配置动态控制徽章</li><li><strong>规则引擎</strong>：支持站点、环境、语言等多维度规则</li><li><strong>类型安全</strong>：完整的 TypeScript 类型定义</li><li><strong>遥测追踪</strong>：内置事件追踪系统</li></ul><h2 id="设计理念" tabindex="-1">设计理念 <a class="header-anchor" href="#设计理念" aria-label="Permalink to &quot;设计理念&quot;">​</a></h2><h3 id="_1-简单优先" tabindex="-1">1. 简单优先 <a class="header-anchor" href="#_1-简单优先" aria-label="Permalink to &quot;1. 简单优先&quot;">​</a></h3><p>API 设计遵循&quot;约定优于配置&quot;的原则，最小可用配置只需一行代码：</p><div class="language-javascript line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">javascript</span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}">LinkExchange.</span><span style="${ssrRenderStyle({ "color": "#B392F0" })}">mount</span><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}">(</span><span style="${ssrRenderStyle({ "color": "#9ECBFF" })}">&#39;#badges&#39;</span><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}">, {</span></span>
 <span class="line"><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}">  source: </span><span style="${ssrRenderStyle({ "color": "#9ECBFF" })}">&#39;https://cdn.example.com/badges.json&#39;</span></span>
@@ -65,7 +65,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("docs/guide/introduction.md");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("guide/introduction.md");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
 const introduction = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);

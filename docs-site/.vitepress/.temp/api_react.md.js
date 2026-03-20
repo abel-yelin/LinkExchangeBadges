@@ -1,8 +1,8 @@
 import { ssrRenderAttrs, ssrRenderStyle } from "vue/server-renderer";
 import { useSSRContext } from "vue";
 import { _ as _export_sfc } from "./plugin-vue_export-helper.1tPrXgE0.js";
-const __pageData = JSON.parse('{"title":"React 组件 API","description":"","frontmatter":{},"headers":[],"relativePath":"docs/api/react.md","filePath":"docs/api/react.md"}');
-const _sfc_main = { name: "docs/api/react.md" };
+const __pageData = JSON.parse('{"title":"React 组件 API","description":"","frontmatter":{},"headers":[],"relativePath":"api/react.md","filePath":"api/react.md"}');
+const _sfc_main = { name: "api/react.md" };
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   _push(`<div${ssrRenderAttrs(_attrs)}><h1 id="react-组件-api" tabindex="-1">React 组件 API <a class="header-anchor" href="#react-组件-api" aria-label="Permalink to &quot;React 组件 API&quot;">​</a></h1><p><code>@link-exchange/react</code> 提供了 React 组件封装，让你在 React 应用中轻松使用 Link Exchange Badges。</p><h2 id="linkexchange" tabindex="-1">LinkExchange <a class="header-anchor" href="#linkexchange" aria-label="Permalink to &quot;LinkExchange&quot;">​</a></h2><p>React 组件，用于在 React 应用中展示徽章。</p><h3 id="导入" tabindex="-1">导入 <a class="header-anchor" href="#导入" aria-label="Permalink to &quot;导入&quot;">​</a></h3><div class="language-typescript line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">typescript</span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span style="${ssrRenderStyle({ "color": "#F97583" })}">import</span><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}"> { LinkExchange } </span><span style="${ssrRenderStyle({ "color": "#F97583" })}">from</span><span style="${ssrRenderStyle({ "color": "#9ECBFF" })}"> &#39;@link-exchange/react&#39;</span></span>
 <span class="line"><span style="${ssrRenderStyle({ "color": "#F97583" })}">import</span><span style="${ssrRenderStyle({ "color": "#F97583" })}"> type</span><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}"> { LinkExchangeProps } </span><span style="${ssrRenderStyle({ "color": "#F97583" })}">from</span><span style="${ssrRenderStyle({ "color": "#9ECBFF" })}"> &#39;@link-exchange/react&#39;</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="props" tabindex="-1">Props <a class="header-anchor" href="#props" aria-label="Permalink to &quot;Props&quot;">​</a></h3><p>LinkExchange 组件接受 <code>LinkExchangeProps</code> 类型的属性，它扩展了 <code>MountOptions</code> 并添加了一个额外属性：</p><div class="language-typescript line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">typescript</span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span style="${ssrRenderStyle({ "color": "#F97583" })}">type</span><span style="${ssrRenderStyle({ "color": "#B392F0" })}"> LinkExchangeProps</span><span style="${ssrRenderStyle({ "color": "#F97583" })}"> =</span><span style="${ssrRenderStyle({ "color": "#B392F0" })}"> MountOptions</span><span style="${ssrRenderStyle({ "color": "#F97583" })}"> &amp;</span><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}"> {</span></span>
@@ -223,7 +223,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("docs/api/react.md");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("api/react.md");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
 const react = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);

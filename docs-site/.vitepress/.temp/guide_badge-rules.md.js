@@ -1,8 +1,8 @@
 import { ssrRenderAttrs, ssrRenderStyle } from "vue/server-renderer";
 import { useSSRContext } from "vue";
 import { _ as _export_sfc } from "./plugin-vue_export-helper.1tPrXgE0.js";
-const __pageData = JSON.parse('{"title":"徽章规则","description":"","frontmatter":{},"headers":[],"relativePath":"docs/guide/badge-rules.md","filePath":"docs/guide/badge-rules.md"}');
-const _sfc_main = { name: "docs/guide/badge-rules.md" };
+const __pageData = JSON.parse('{"title":"徽章规则","description":"","frontmatter":{},"headers":[],"relativePath":"guide/badge-rules.md","filePath":"guide/badge-rules.md"}');
+const _sfc_main = { name: "guide/badge-rules.md" };
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   _push(`<div${ssrRenderAttrs(_attrs)}><h1 id="徽章规则" tabindex="-1">徽章规则 <a class="header-anchor" href="#徽章规则" aria-label="Permalink to &quot;徽章规则&quot;">​</a></h1><p>徽章规则引擎让你能够根据不同条件动态控制徽章的展示。</p><h2 id="规则类型" tabindex="-1">规则类型 <a class="header-anchor" href="#规则类型" aria-label="Permalink to &quot;规则类型&quot;">​</a></h2><h3 id="_1-站点规则-siteids" tabindex="-1">1. 站点规则 (siteIds) <a class="header-anchor" href="#_1-站点规则-siteids" aria-label="Permalink to &quot;1. 站点规则 (siteIds)&quot;">​</a></h3><p>只在指定站点展示徽章：</p><div class="language-json line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">json</span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}">{</span></span>
 <span class="line"><span style="${ssrRenderStyle({ "color": "#79B8FF" })}">  &quot;badges&quot;</span><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}">: [</span></span>
@@ -244,7 +244,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("docs/guide/badge-rules.md");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("guide/badge-rules.md");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
 const badgeRules = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);

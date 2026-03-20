@@ -1,8 +1,8 @@
 import { ssrRenderAttrs, ssrRenderStyle } from "vue/server-renderer";
 import { useSSRContext } from "vue";
 import { _ as _export_sfc } from "./plugin-vue_export-helper.1tPrXgE0.js";
-const __pageData = JSON.parse('{"title":"安装","description":"","frontmatter":{},"headers":[],"relativePath":"docs/guide/installation.md","filePath":"docs/guide/installation.md"}');
-const _sfc_main = { name: "docs/guide/installation.md" };
+const __pageData = JSON.parse('{"title":"安装","description":"","frontmatter":{},"headers":[],"relativePath":"guide/installation.md","filePath":"guide/installation.md"}');
+const _sfc_main = { name: "guide/installation.md" };
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   _push(`<div${ssrRenderAttrs(_attrs)}><h1 id="安装" tabindex="-1">安装 <a class="header-anchor" href="#安装" aria-label="Permalink to &quot;安装&quot;">​</a></h1><p>Link Exchange Badges 提供多种安装方式，根据你的项目选择合适的方案。</p><h2 id="包说明" tabindex="-1">包说明 <a class="header-anchor" href="#包说明" aria-label="Permalink to &quot;包说明&quot;">​</a></h2><p>我们提供了三个 npm 包：</p><ul><li><strong>@link-exchange/core</strong>：核心 SDK，提供所有底层 API</li><li><strong>@link-exchange/react</strong>：React 组件封装</li><li><strong>@link-exchange/script</strong>：CDN 脚本，用于 HTML 直接引入</li></ul><h2 id="npm-安装" tabindex="-1">npm 安装 <a class="header-anchor" href="#npm-安装" aria-label="Permalink to &quot;npm 安装&quot;">​</a></h2><h3 id="react-用户" tabindex="-1">React 用户 <a class="header-anchor" href="#react-用户" aria-label="Permalink to &quot;React 用户&quot;">​</a></h3><p>推荐使用 <code>@link-exchange/react</code>：</p><div class="language-bash line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">bash</span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span style="${ssrRenderStyle({ "color": "#6A737D" })}"># npm</span></span>
 <span class="line"><span style="${ssrRenderStyle({ "color": "#B392F0" })}">npm</span><span style="${ssrRenderStyle({ "color": "#9ECBFF" })}"> install</span><span style="${ssrRenderStyle({ "color": "#9ECBFF" })}"> @link-exchange/react</span></span>
@@ -52,7 +52,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("docs/guide/installation.md");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("guide/installation.md");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
 const installation = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);

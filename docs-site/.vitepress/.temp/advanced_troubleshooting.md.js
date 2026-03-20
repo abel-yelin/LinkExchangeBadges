@@ -1,8 +1,8 @@
 import { ssrRenderAttrs, ssrRenderStyle } from "vue/server-renderer";
 import { useSSRContext } from "vue";
 import { _ as _export_sfc } from "./plugin-vue_export-helper.1tPrXgE0.js";
-const __pageData = JSON.parse('{"title":"故障排查","description":"","frontmatter":{},"headers":[],"relativePath":"docs/advanced/troubleshooting.md","filePath":"docs/advanced/troubleshooting.md"}');
-const _sfc_main = { name: "docs/advanced/troubleshooting.md" };
+const __pageData = JSON.parse('{"title":"故障排查","description":"","frontmatter":{},"headers":[],"relativePath":"advanced/troubleshooting.md","filePath":"advanced/troubleshooting.md"}');
+const _sfc_main = { name: "advanced/troubleshooting.md" };
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   _push(`<div${ssrRenderAttrs(_attrs)}><h1 id="故障排查" tabindex="-1">故障排查 <a class="header-anchor" href="#故障排查" aria-label="Permalink to &quot;故障排查&quot;">​</a></h1><p>本节介绍常见问题和解决方案。</p><h2 id="徽章不显示" tabindex="-1">徽章不显示 <a class="header-anchor" href="#徽章不显示" aria-label="Permalink to &quot;徽章不显示&quot;">​</a></h2><h3 id="问题-页面上没有徽章显示" tabindex="-1">问题：页面上没有徽章显示 <a class="header-anchor" href="#问题-页面上没有徽章显示" aria-label="Permalink to &quot;问题：页面上没有徽章显示&quot;">​</a></h3><h4 id="可能原因-1-配置-url-错误" tabindex="-1">可能原因 1：配置 URL 错误 <a class="header-anchor" href="#可能原因-1-配置-url-错误" aria-label="Permalink to &quot;可能原因 1：配置 URL 错误&quot;">​</a></h4><p>检查配置 URL 是否正确：</p><div class="language-javascript line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">javascript</span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}">LinkExchange.</span><span style="${ssrRenderStyle({ "color": "#B392F0" })}">mount</span><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}">(</span><span style="${ssrRenderStyle({ "color": "#9ECBFF" })}">&#39;#badges&#39;</span><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}">, {</span></span>
 <span class="line"><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}">  source: </span><span style="${ssrRenderStyle({ "color": "#9ECBFF" })}">&#39;https://cdn.example.com/badges.json&#39;</span><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}">,</span></span>
@@ -223,7 +223,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("docs/advanced/troubleshooting.md");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("advanced/troubleshooting.md");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
 const troubleshooting = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);

@@ -1,8 +1,8 @@
 import { ssrRenderAttrs, ssrRenderStyle } from "vue/server-renderer";
 import { useSSRContext } from "vue";
 import { _ as _export_sfc } from "./plugin-vue_export-helper.1tPrXgE0.js";
-const __pageData = JSON.parse('{"title":"缓存策略","description":"","frontmatter":{},"headers":[],"relativePath":"docs/guide/caching.md","filePath":"docs/guide/caching.md"}');
-const _sfc_main = { name: "docs/guide/caching.md" };
+const __pageData = JSON.parse('{"title":"缓存策略","description":"","frontmatter":{},"headers":[],"relativePath":"guide/caching.md","filePath":"guide/caching.md"}');
+const _sfc_main = { name: "guide/caching.md" };
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   _push(`<div${ssrRenderAttrs(_attrs)}><h1 id="缓存策略" tabindex="-1">缓存策略 <a class="header-anchor" href="#缓存策略" aria-label="Permalink to &quot;缓存策略&quot;">​</a></h1><p>Link Exchange Badges SDK 内置了智能缓存系统，可以显著提升性能和用户体验。</p><h2 id="缓存机制" tabindex="-1">缓存机制 <a class="header-anchor" href="#缓存机制" aria-label="Permalink to &quot;缓存机制&quot;">​</a></h2><h3 id="工作原理" tabindex="-1">工作原理 <a class="header-anchor" href="#工作原理" aria-label="Permalink to &quot;工作原理&quot;">​</a></h3><p>SDK 使用以下缓存策略：</p><ol><li><strong>Cache-First</strong>：优先使用缓存</li><li><strong>TTL 验证</strong>：检查缓存是否过期</li><li><strong>Stale Fallback</strong>：网络失败时使用过期缓存</li><li><strong>LocalStorage</strong>：使用浏览器 localStorage 存储</li></ol><h3 id="缓存流程" tabindex="-1">缓存流程 <a class="header-anchor" href="#缓存流程" aria-label="Permalink to &quot;缓存流程&quot;">​</a></h3><div class="language- line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span>┌─────────────────┐</span></span>
 <span class="line"><span>│   发起请求       │</span></span>
@@ -274,7 +274,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("docs/guide/caching.md");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("guide/caching.md");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
 const caching = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);

@@ -1,8 +1,8 @@
 import { ssrRenderAttrs, ssrRenderStyle } from "vue/server-renderer";
 import { useSSRContext } from "vue";
 import { _ as _export_sfc } from "./plugin-vue_export-helper.1tPrXgE0.js";
-const __pageData = JSON.parse('{"title":"HTML 集成指南","description":"","frontmatter":{},"headers":[],"relativePath":"docs/guide/html-integration.md","filePath":"docs/guide/html-integration.md"}');
-const _sfc_main = { name: "docs/guide/html-integration.md" };
+const __pageData = JSON.parse('{"title":"HTML 集成指南","description":"","frontmatter":{},"headers":[],"relativePath":"guide/html-integration.md","filePath":"guide/html-integration.md"}');
+const _sfc_main = { name: "guide/html-integration.md" };
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   _push(`<div${ssrRenderAttrs(_attrs)}><h1 id="html-集成指南" tabindex="-1">HTML 集成指南 <a class="header-anchor" href="#html-集成指南" aria-label="Permalink to &quot;HTML 集成指南&quot;">​</a></h1><p>本指南详细介绍如何在纯 HTML 项目中集成 Link Exchange Badges SDK。</p><h2 id="准备工作" tabindex="-1">准备工作 <a class="header-anchor" href="#准备工作" aria-label="Permalink to &quot;准备工作&quot;">​</a></h2><h3 id="_1-准备配置文件" tabindex="-1">1. 准备配置文件 <a class="header-anchor" href="#_1-准备配置文件" aria-label="Permalink to &quot;1. 准备配置文件&quot;">​</a></h3><p>创建 <code>badges.json</code> 文件：</p><div class="language-json line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">json</span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}">{</span></span>
 <span class="line"><span style="${ssrRenderStyle({ "color": "#79B8FF" })}">  &quot;configVersion&quot;</span><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}">: </span><span style="${ssrRenderStyle({ "color": "#9ECBFF" })}">&quot;1&quot;</span><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}">,</span></span>
@@ -390,7 +390,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("docs/guide/html-integration.md");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("guide/html-integration.md");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
 const htmlIntegration = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);

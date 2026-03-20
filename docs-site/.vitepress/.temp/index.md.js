@@ -1,8 +1,8 @@
 import { ssrRenderAttrs, ssrRenderStyle } from "vue/server-renderer";
 import { useSSRContext } from "vue";
 import { _ as _export_sfc } from "./plugin-vue_export-helper.1tPrXgE0.js";
-const __pageData = JSON.parse('{"title":"","description":"","frontmatter":{"layout":"home","hero":{"name":"Link Exchange Badges","text":"跨栈徽章展示 SDK","tagline":"在任何 Web 应用中轻松展示合作伙伴徽章","actions":[{"theme":"brand","text":"快速开始","link":"/guide/getting-started"},{"theme":"alt","text":"查看 API","link":"/api/core"},{"theme":"alt","text":"GitHub","link":"https://github.com/yourusername/link-exchange-badges"}]},"features":[{"icon":"⚡️","title":"极简集成","details":"只需几行代码，即可在 HTML、React、Next.js 等任何框架中集成徽章展示功能。"},{"icon":"🎯","title":"类型安全","details":"完整的 TypeScript 支持，提供准确的类型定义和智能提示。"},{"icon":"🔄","title":"远程配置","details":"通过远程 JSON 配置动态控制徽章展示，无需重新部署应用。"},{"icon":"🛡️","title":"安全可靠","details":"内置安全白名单、配置验证和错误处理，确保生产环境稳定运行。"},{"icon":"📊","title":"遥测分析","details":"内置事件追踪系统，可集成任意分析平台监控徽章性能。"},{"icon":"💾","title":"智能缓存","details":"自动缓存远程配置，减少网络请求，提升加载性能。"}]},"headers":[],"relativePath":"docs/index.md","filePath":"docs/index.md"}');
-const _sfc_main = { name: "docs/index.md" };
+const __pageData = JSON.parse('{"title":"","description":"","frontmatter":{"layout":"home","hero":{"name":"Link Exchange Badges","text":"跨栈徽章展示 SDK","tagline":"在任何 Web 应用中轻松展示合作伙伴徽章","actions":[{"theme":"brand","text":"快速开始","link":"/guide/getting-started"},{"theme":"alt","text":"查看 API","link":"/api/core"},{"theme":"alt","text":"GitHub","link":"https://github.com/yourusername/link-exchange-badges"}]},"features":[{"icon":"⚡️","title":"极简集成","details":"只需几行代码，即可在 HTML、React、Next.js 等任何框架中集成徽章展示功能。"},{"icon":"🎯","title":"类型安全","details":"完整的 TypeScript 支持，提供准确的类型定义和智能提示。"},{"icon":"🔄","title":"远程配置","details":"通过远程 JSON 配置动态控制徽章展示，无需重新部署应用。"},{"icon":"🛡️","title":"安全可靠","details":"内置安全白名单、配置验证和错误处理，确保生产环境稳定运行。"},{"icon":"📊","title":"遥测分析","details":"内置事件追踪系统，可集成任意分析平台监控徽章性能。"},{"icon":"💾","title":"智能缓存","details":"自动缓存远程配置，减少网络请求，提升加载性能。"}]},"headers":[],"relativePath":"index.md","filePath":"index.md"}');
+const _sfc_main = { name: "index.md" };
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   _push(`<div${ssrRenderAttrs(_attrs)}><h2 id="快速预览" tabindex="-1">快速预览 <a class="header-anchor" href="#快速预览" aria-label="Permalink to &quot;快速预览&quot;">​</a></h2><h3 id="html-使用" tabindex="-1">HTML 使用 <a class="header-anchor" href="#html-使用" aria-label="Permalink to &quot;HTML 使用&quot;">​</a></h3><div class="language-html line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">html</span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span style="${ssrRenderStyle({ "color": "#6A737D" })}">&lt;!-- 引入 SDK --&gt;</span></span>
 <span class="line"><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}">&lt;</span><span style="${ssrRenderStyle({ "color": "#85E89D" })}">script</span><span style="${ssrRenderStyle({ "color": "#B392F0" })}"> src</span><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}">=</span><span style="${ssrRenderStyle({ "color": "#9ECBFF" })}">&quot;https://cdn.example.com/link-exchange.js&quot;</span><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}">&gt;&lt;/</span><span style="${ssrRenderStyle({ "color": "#85E89D" })}">script</span><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}">&gt;</span></span>
@@ -47,7 +47,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("docs/index.md");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("index.md");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
 const index = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);

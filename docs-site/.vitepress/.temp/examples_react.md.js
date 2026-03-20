@@ -1,8 +1,8 @@
 import { ssrRenderAttrs, ssrRenderStyle } from "vue/server-renderer";
 import { useSSRContext } from "vue";
 import { _ as _export_sfc } from "./plugin-vue_export-helper.1tPrXgE0.js";
-const __pageData = JSON.parse('{"title":"React 示例","description":"","frontmatter":{},"headers":[],"relativePath":"docs/examples/react.md","filePath":"docs/examples/react.md"}');
-const _sfc_main = { name: "docs/examples/react.md" };
+const __pageData = JSON.parse('{"title":"React 示例","description":"","frontmatter":{},"headers":[],"relativePath":"examples/react.md","filePath":"examples/react.md"}');
+const _sfc_main = { name: "examples/react.md" };
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   _push(`<div${ssrRenderAttrs(_attrs)}><h1 id="react-示例" tabindex="-1">React 示例 <a class="header-anchor" href="#react-示例" aria-label="Permalink to &quot;React 示例&quot;">​</a></h1><p>本节展示如何在 React 项目中使用 Link Exchange Badges SDK。</p><h2 id="vite-react-示例" tabindex="-1">Vite + React 示例 <a class="header-anchor" href="#vite-react-示例" aria-label="Permalink to &quot;Vite + React 示例&quot;">​</a></h2><h3 id="_1-安装依赖" tabindex="-1">1. 安装依赖 <a class="header-anchor" href="#_1-安装依赖" aria-label="Permalink to &quot;1. 安装依赖&quot;">​</a></h3><div class="language-bash line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">bash</span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span style="${ssrRenderStyle({ "color": "#B392F0" })}">npm</span><span style="${ssrRenderStyle({ "color": "#9ECBFF" })}"> create</span><span style="${ssrRenderStyle({ "color": "#9ECBFF" })}"> vite@latest</span><span style="${ssrRenderStyle({ "color": "#9ECBFF" })}"> my-app</span><span style="${ssrRenderStyle({ "color": "#79B8FF" })}"> --</span><span style="${ssrRenderStyle({ "color": "#79B8FF" })}"> --template</span><span style="${ssrRenderStyle({ "color": "#9ECBFF" })}"> react</span></span>
 <span class="line"><span style="${ssrRenderStyle({ "color": "#79B8FF" })}">cd</span><span style="${ssrRenderStyle({ "color": "#9ECBFF" })}"> my-app</span></span>
@@ -430,7 +430,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("docs/examples/react.md");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("examples/react.md");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
 const react = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);

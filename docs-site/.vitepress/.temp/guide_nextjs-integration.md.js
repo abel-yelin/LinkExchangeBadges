@@ -1,8 +1,8 @@
 import { ssrRenderAttrs, ssrRenderStyle } from "vue/server-renderer";
 import { useSSRContext } from "vue";
 import { _ as _export_sfc } from "./plugin-vue_export-helper.1tPrXgE0.js";
-const __pageData = JSON.parse('{"title":"Next.js 集成指南","description":"","frontmatter":{},"headers":[],"relativePath":"docs/guide/nextjs-integration.md","filePath":"docs/guide/nextjs-integration.md"}');
-const _sfc_main = { name: "docs/guide/nextjs-integration.md" };
+const __pageData = JSON.parse('{"title":"Next.js 集成指南","description":"","frontmatter":{},"headers":[],"relativePath":"guide/nextjs-integration.md","filePath":"guide/nextjs-integration.md"}');
+const _sfc_main = { name: "guide/nextjs-integration.md" };
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   _push(`<div${ssrRenderAttrs(_attrs)}><h1 id="next-js-集成指南" tabindex="-1">Next.js 集成指南 <a class="header-anchor" href="#next-js-集成指南" aria-label="Permalink to &quot;Next.js 集成指南&quot;">​</a></h1><p>本指南详细介绍如何在 Next.js 项目中集成 Link Exchange Badges SDK。</p><h2 id="安装" tabindex="-1">安装 <a class="header-anchor" href="#安装" aria-label="Permalink to &quot;安装&quot;">​</a></h2><div class="language-bash line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">bash</span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span style="${ssrRenderStyle({ "color": "#B392F0" })}">npm</span><span style="${ssrRenderStyle({ "color": "#9ECBFF" })}"> install</span><span style="${ssrRenderStyle({ "color": "#9ECBFF" })}"> @link-exchange/react</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br></div></div><h2 id="app-router-next-js-14" tabindex="-1">App Router (Next.js 14+) <a class="header-anchor" href="#app-router-next-js-14" aria-label="Permalink to &quot;App Router (Next.js 14+)&quot;">​</a></h2><h3 id="_1-创建客户端组件" tabindex="-1">1. 创建客户端组件 <a class="header-anchor" href="#_1-创建客户端组件" aria-label="Permalink to &quot;1. 创建客户端组件&quot;">​</a></h3><p>由于 SDK 需要访问浏览器 API，必须使用 <code>&#39;use client&#39;</code> 指令：</p><div class="language-tsx line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">tsx</span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span style="${ssrRenderStyle({ "color": "#6A737D" })}">// components/Badges.tsx</span></span>
 <span class="line"><span style="${ssrRenderStyle({ "color": "#9ECBFF" })}">&#39;use client&#39;</span></span>
@@ -509,7 +509,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("docs/guide/nextjs-integration.md");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("guide/nextjs-integration.md");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
 const nextjsIntegration = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);

@@ -1,8 +1,8 @@
 import { ssrRenderAttrs, ssrRenderStyle } from "vue/server-renderer";
 import { useSSRContext } from "vue";
 import { _ as _export_sfc } from "./plugin-vue_export-helper.1tPrXgE0.js";
-const __pageData = JSON.parse('{"title":"安全性","description":"","frontmatter":{},"headers":[],"relativePath":"docs/advanced/security.md","filePath":"docs/advanced/security.md"}');
-const _sfc_main = { name: "docs/advanced/security.md" };
+const __pageData = JSON.parse('{"title":"安全性","description":"","frontmatter":{},"headers":[],"relativePath":"advanced/security.md","filePath":"advanced/security.md"}');
+const _sfc_main = { name: "advanced/security.md" };
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   _push(`<div${ssrRenderAttrs(_attrs)}><h1 id="安全性" tabindex="-1">安全性 <a class="header-anchor" href="#安全性" aria-label="Permalink to &quot;安全性&quot;">​</a></h1><p>本节介绍 Link Exchange Badges SDK 的安全特性和最佳实践。</p><h2 id="安全白名单" tabindex="-1">安全白名单 <a class="header-anchor" href="#安全白名单" aria-label="Permalink to &quot;安全白名单&quot;">​</a></h2><h3 id="链接域名白名单" tabindex="-1">链接域名白名单 <a class="header-anchor" href="#链接域名白名单" aria-label="Permalink to &quot;链接域名白名单&quot;">​</a></h3><p>限制徽章链接只能跳转到指定域名：</p><div class="language-javascript line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">javascript</span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}">LinkExchange.</span><span style="${ssrRenderStyle({ "color": "#B392F0" })}">mount</span><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}">(</span><span style="${ssrRenderStyle({ "color": "#9ECBFF" })}">&#39;#badges&#39;</span><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}">, {</span></span>
 <span class="line"><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}">  source: </span><span style="${ssrRenderStyle({ "color": "#9ECBFF" })}">&#39;https://cdn.example.com/badges.json&#39;</span><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}">,</span></span>
@@ -328,7 +328,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("docs/advanced/security.md");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("advanced/security.md");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
 const security = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);

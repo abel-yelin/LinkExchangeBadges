@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   base: '/LinkExchangeBadges/',
+  srcDir: 'docs',
   ignoreDeadLinks: true,
 
   title: 'Link Exchange Badges',

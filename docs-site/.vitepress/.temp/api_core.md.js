@@ -1,8 +1,8 @@
 import { ssrRenderAttrs, ssrRenderStyle } from "vue/server-renderer";
 import { useSSRContext } from "vue";
 import { _ as _export_sfc } from "./plugin-vue_export-helper.1tPrXgE0.js";
-const __pageData = JSON.parse('{"title":"核心 API","description":"","frontmatter":{},"headers":[],"relativePath":"docs/api/core.md","filePath":"docs/api/core.md"}');
-const _sfc_main = { name: "docs/api/core.md" };
+const __pageData = JSON.parse('{"title":"核心 API","description":"","frontmatter":{},"headers":[],"relativePath":"api/core.md","filePath":"api/core.md"}');
+const _sfc_main = { name: "api/core.md" };
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   _push(`<div${ssrRenderAttrs(_attrs)}><h1 id="核心-api" tabindex="-1">核心 API <a class="header-anchor" href="#核心-api" aria-label="Permalink to &quot;核心 API&quot;">​</a></h1><p>Link Exchange Badges 核心 API (<code>@link-exchange/core</code>) 提供底层的徽章渲染功能。</p><h2 id="mount" tabindex="-1">mount <a class="header-anchor" href="#mount" aria-label="Permalink to &quot;mount&quot;">​</a></h2><p>通过 CSS 选择器查找容器并挂载徽章。</p><h3 id="签名" tabindex="-1">签名 <a class="header-anchor" href="#签名" aria-label="Permalink to &quot;签名&quot;">​</a></h3><div class="language-typescript line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">typescript</span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span style="${ssrRenderStyle({ "color": "#F97583" })}">function</span><span style="${ssrRenderStyle({ "color": "#B392F0" })}"> mount</span><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}">(</span></span>
 <span class="line"><span style="${ssrRenderStyle({ "color": "#FFAB70" })}">  selector</span><span style="${ssrRenderStyle({ "color": "#F97583" })}">:</span><span style="${ssrRenderStyle({ "color": "#79B8FF" })}"> string</span><span style="${ssrRenderStyle({ "color": "#E1E4E8" })}">,</span></span>
@@ -219,7 +219,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("docs/api/core.md");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("api/core.md");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
 const core = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);
