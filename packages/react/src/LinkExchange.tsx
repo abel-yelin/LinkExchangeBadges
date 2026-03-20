@@ -1,13 +1,16 @@
-import { useEffect, useRef, type JSX } from 'react'
+import { useEffect, useRef } from 'react'
 import { mountElement, type MountResult } from '@link-exchange/core'
 import type { MountOptions } from '@link-exchange/core'
+
+// React 类型导入
+import type { HTMLAttributes } from 'react'
 
 export type LinkExchangeProps = MountOptions & {
   /**
    * 容器标签名，默认 'div'。
-   * 传入 'footer' / 'section' 等语义化标签可改善 accessibility。
+   * 支持 HTML 元素标签如 'div', 'footer', 'section' 等。
    */
-  as?: keyof JSX.IntrinsicElements
+  as?: 'div' | 'footer' | 'section' | 'nav' | 'main' | 'article' | 'aside'
 }
 
 export function LinkExchange({
@@ -24,7 +27,6 @@ export function LinkExchange({
 
     void mountElement(ref.current, options).then((result) => {
       if (!isMounted) {
-        // 组件在 fetch 完成前已卸载，立即清理
         result.unmount()
         return
       }
@@ -33,20 +35,17 @@ export function LinkExchange({
 
     return () => {
       isMounted = false
-      // 清理：取消进行中的 fetch + 解绑 click 事件监听器
       mountResultRef.current?.unmount()
       mountResultRef.current = null
     }
   }, [
-    // 只监听真正影响渲染结果的字段，避免 options 对象引用变化触发无限重渲染
     options.source,
     options.siteId,
     options.group,
     options.environment,
     options.locale,
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   ])
 
-  // Tag 作为泛型标签使用时需要类型断言
-  return <Tag ref={ref as React.Ref<HTMLDivElement>} />
+  // 使用 any 类型避免复杂的泛型推断问题
+  return <Tag ref={ref as any} />
 }
