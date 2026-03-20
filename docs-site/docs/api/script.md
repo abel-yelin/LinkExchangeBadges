@@ -381,7 +381,7 @@ LinkExchange.mount('#badges', {
 
 ## 加载时机
 
-### 在 <head> 中加载
+### 在 `<head>` 中加载
 
 SDK 会自动等待 DOM 准备就绪：
 
@@ -403,7 +403,7 @@ SDK 会自动等待 DOM 准备就绪：
 </html>
 ```
 
-### 在 <body> 底部加载
+### 在 `<body>` 底部加载
 
 ```html
 <!DOCTYPE html>

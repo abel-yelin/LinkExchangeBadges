@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   base: '/link-exchange-badges/',
+  ignoreDeadLinks: true,
 
   title: 'Link Exchange Badges',
   description: '跨栈徽章展示 SDK 文档',
