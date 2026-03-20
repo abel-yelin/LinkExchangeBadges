@@ -1,11 +1,30 @@
 {
   "name": "@link-exchange/react",
   "version": "0.1.0",
-  "description": "Link Exchange Badge Delivery SDK — React Adapter",
+  "description": "Link Exchange Badge Delivery SDK — React component adapter for displaying partner badges",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "keywords": [
+    "react",
+    "component",
+    "badge",
+    "partner",
+    "footer",
+    "remote-config",
+    "sdk",
+    "link-exchange",
+    "react-component"
+  ],
+  "author": "Link Exchange Badges",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/link-exchange-badges.git",
+    "directory": "packages/react"
+  },
+  "homepage": "https://yourusername.github.io/link-exchange-badges/guide/react-integration",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",

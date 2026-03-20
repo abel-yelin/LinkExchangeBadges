@@ -1,10 +1,31 @@
 {
   "name": "@link-exchange/script",
   "version": "0.1.0",
-  "description": "Link Exchange Badge Delivery SDK — CDN Script Bundle",
+  "description": "Link Exchange Badge Delivery SDK — CDN script bundle for direct HTML usage",
   "type": "module",
   "main": "./dist/index.global.js",
   "module": "./dist/index.js",
+  "keywords": [
+    "cdn",
+    "umd",
+    "iife",
+    "badge",
+    "partner",
+    "footer",
+    "remote-config",
+    "sdk",
+    "link-exchange",
+    "browser",
+    "vanilla-js"
+  ],
+  "author": "Link Exchange Badges",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/link-exchange-badges.git",
+    "directory": "packages/script"
+  },
+  "homepage": "https://yourusername.github.io/link-exchange-badges/guide/html-integration",
   "files": ["dist"],
   "scripts": {
     "build": "tsup src/index.ts --format esm,iife --global-name LinkExchange --minify --clean",

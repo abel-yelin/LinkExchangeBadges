@@ -1,11 +1,30 @@
 {
   "name": "@link-exchange/core",
   "version": "0.1.0",
-  "description": "Link Exchange Badge Delivery SDK — Core",
+  "description": "Link Exchange Badge Delivery SDK — Core library for displaying partner badges via remote JSON configuration",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "keywords": [
+    "badge",
+    "partner",
+    "footer",
+    "remote-config",
+    "sdk",
+    "link-exchange",
+    "badges",
+    "typescript",
+    "cdn"
+  ],
+  "author": "Link Exchange Badges",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/link-exchange-badges.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://yourusername.github.io/link-exchange-badges/",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",

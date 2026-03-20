@@ -15,6 +15,7 @@ export default defineConfig({
       { text: '指南', link: '/guide/introduction' },
       { text: 'API 参考', link: '/api/core' },
       { text: '示例', link: '/examples/html' },
+      { text: '案例', link: '/showcase/' },
       { text: '高级', link: '/advanced/telemetry' },
     ],
 
@@ -63,6 +64,14 @@ export default defineConfig({
             { text: 'HTML 示例', link: '/examples/html' },
             { text: 'React 示例', link: '/examples/react' },
             { text: 'Next.js 示例', link: '/examples/nextjs' },
+          ]
+        }
+      ],
+      '/showcase/': [
+        {
+          text: '案例',
+          items: [
+            { text: '使用案例展示', link: '/showcase/' },
           ]
         }
       ],

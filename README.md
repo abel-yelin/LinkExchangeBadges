@@ -2,9 +2,12 @@
 
 > 跨技术栈的徽章交付 SDK - 通过远程 JSON 配置统一管理和展示合作伙伴徽章
 
+[![npm version](https://badge.fury.io/js/%40link-exchange%2Fcore.svg)](https://www.npmjs.com/package/@link-exchange/core)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
-[![pnpm](https://img.shields.io/badge/pnpm-8.0-red)](https://pnpm.io/)
+[![pnpm](https://img.shields.io/badge/pnpm-9.0-red)](https://pnpm.io/)
+[![Build Status](https://github.com/yourusername/link-exchange-badges/workflows/CI/badge.svg)](https://github.com/yourusername/link-exchange-badges/actions)
+[![Docs](https://img.shields.io/badge/docs-VitePress-green)](https://yourusername.github.io/link-exchange-badges/)
 
 ## 📖 简介
 
