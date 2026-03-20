@@ -23,10 +23,36 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
-          cache: 'pnpm'
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+      - name: Setup pnpm cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile=false
+
+      - name: Build core package (with type declarations)
+        run: |
+          echo "Building @link-exchange/core first..."
+          cd packages/core && pnpm build
+          echo "Core package built successfully"
+          ls -la dist/
+
+      - name: Build all packages
+        run: |
+          echo "Building all packages..."
+          pnpm -r --filter '@link-exchange/*' run build
+          echo "All packages built successfully"
 
       - name: Type check
         run: pnpm -r exec tsc --noEmit
@@ -34,7 +60,7 @@ jobs:
       - name: Lint
         run: pnpm -r run lint
 
-      - name: Build
+      - name: Build all packages
         run: pnpm -r run build
 
       - name: Test
