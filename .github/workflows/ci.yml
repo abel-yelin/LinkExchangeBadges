@@ -54,8 +54,14 @@ jobs:
           pnpm -r --filter '@link-exchange/{react,script}' run build
           echo "All packages built successfully"
 
-      - name: Type check
-        run: pnpm typecheck
+      - name: Type check - Core
+        run: cd packages/core && pnpm exec tsc --noEmit
+
+      - name: Type check - React
+        run: cd packages/react && pnpm exec tsc --noEmit
+
+      - name: Type check - Script
+        run: cd packages/script && pnpm exec tsc --noEmit
 
       - name: Lint
         run: pnpm -r run lint
